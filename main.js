@@ -79,13 +79,10 @@ function applyGridLayout(parent) {
     item.style.gridRowStart = "auto";
   });
 
-  // تطبيق تخطيط مختلف حسب عرض الشاشة
   if (windowWidth >= 1200) {
-    // تخطيط للشاشات الكبيرة
     parent.style.gridTemplateColumns = "repeat(4, 1fr)";
     parent.style.gridTemplateRows = "repeat(2, 1fr)";
     
-    // div2 (المنتج الرئيسي 1)
     items[1].style.gridRow = "span 2 / span 2";
     items[1].style.gridColumnStart = "2";
     items[1].style.gridRowStart = "1";
